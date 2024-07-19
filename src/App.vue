@@ -1,16 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TextoPrincipal msg="Welcome to Your Vue.js App"/>
+  <ImagensDiversas msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ImagensDiversas from './components/ImagensDiversas.vue'
+import TextoPrincipal from './components/TextoPrincipal.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    TextoPrincipal,
+    ImagensDiversas
+    
+}
 }
 </script>
 
@@ -24,3 +28,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
