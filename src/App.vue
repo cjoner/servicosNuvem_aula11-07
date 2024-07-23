@@ -1,31 +1,29 @@
 <template>
-  <TextoPrincipal msg="Welcome to Your Vue.js App"/>
-  <ImagensDiversas msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <nav>
+      <router-link class= "links" to="/">Home</router-link>
+      <router-link class= "links" to="/texto">Texto</router-link>
+      <router-link class= "links" to="/imagens">Imagens</router-link>
+    </nav>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import ImagensDiversas from './components/ImagensDiversas.vue'
-import TextoPrincipal from './components/TextoPrincipal.vue';
-
-
 export default {
-  name: 'App',
-  components: {
-    TextoPrincipal,
-    ImagensDiversas
-    
-}
+  name: 'App'
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.links{
+  margin-right: 15px;
+  
 }
 </style>
 
